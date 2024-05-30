@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flappy Bird - Invitation</title>
+  <style>
+    @font-face {
+     font-family: 'Plank';
+     src: url('PLANK___.TTF') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+   }
+
+   html, body {
+     margin: 0;
+     padding: 0;
+     font-family: 'Plank';
+     background-color: rgb(42, 42, 149);
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+   }
+
+   h2 {
+     text-align: center;
+     font-size: 30px;
+     color: chartreuse;
+     text-shadow:  0 0 30px rgb(0, 0, 0);
+   }
+
+   p {
+     text-align: center;
+     font-family: monospace;
+     color: chartreuse;
+     text-shadow:  0 0 30px rgb(0, 0, 0);
+   }
+
+   button {
+     display: block;
+     margin: 3rem auto; 
+     padding:  0.5rem;
+     border-radius: 10px;
+     width: 35%;
+     text-align: center;
+     background-color: chartreuse;
+     border: none;
+     box-shadow: 0 0 30px rgb(0, 0, 0);
+   }
+
+   #btns-container {
+    display: flex;
+    flex-direction: row;
+   }
+
+ </style>
+  <script src="invitation.js"></script>
+</head>
+<body>
+  <div id="invitation-page" style="text-align: center; margin-top: 20px;">
+    <h2>You've been summond to my birthday party</h2>
+    <p>Du bist eingeladen zu meiner Geburtstagsparty!</p>
+    <p>Wann: Datum und Uhrzeit</p>
+    <p>Am Bachgraben 36 <br> 4056 Basel</p>
+    <div id="btns-container">
+    <button onclick="sendResponse('Ich komme')">Ich komme</button>
+    <button onclick="sendResponse('Ich komme nicht')">Ich komme nicht</button>
+  </div>
+  </div>
+</body>
+</html>

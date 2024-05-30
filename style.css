@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Plank';
+  src: url('PLANK___.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Plank';
+}
+
+canvas {
+  display: block;
+}
+
+h2, h1, p {
+  font-family: 'Plank';
+}
+
+#start-page {
+  font-family: 'Plank';
+  background-color: blue;
+}
+
+#invitation-page {
+  font-family: 'Plank';
+  background-color: blue;
+}
+
+#game-over-page {
+  font-family: 'Plank';
+  background-color: blue;
+}

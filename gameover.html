@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flappy Bird - Game Over</title>
+  <style>
+    @font-face {
+      font-family: 'Plank';
+      src: url('PLANK___.TTF') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Plank';
+      background-color: rgb(42, 42, 149);
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #game-over-page {
+      text-align: left; /* Ensures text is left-aligned */
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 30px;
+      color: chartreuse;
+      text-shadow:  0 0 30px rgb(0, 0, 0);
+    }
+
+    button {
+      display: block;
+      margin: 3rem auto; 
+      padding:  0.5rem;
+      border-radius: 10px;
+      width: 80%;
+      text-align: center;
+      background-color: chartreuse;
+      border: none;
+      box-shadow: 0 0 30px rgb(0, 0, 0);
+    }
+
+    #score-history {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      border-radius: 10px;
+      height: 300px;
+      overflow-y: scroll;
+      border: 2px solid chartreuse;
+      font-family: monospace;
+      font-size: 14px;
+      color:chartreuse
+    }
+    #score-history-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      height: 30px;
+      position: sticky;
+      top: 0;
+      background-image:linear-gradient(rgb(42, 42, 149) 60% ,rgba(42, 42, 149, 0));
+      padding: 10px 0;
+    }
+
+    .score-entry {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+    }
+
+    .score-name {
+      text-align: left;
+    }
+
+    .score-value {
+      text-align: right;
+    }
+
+  </style>
+  <script src="gameover.js"></script>
+</head>
+<body>
+  <div id="game-over-page">
+    <h2>Game Over</h2>
+    <button onclick="startOver()">Start Over</button>
+    <div id="score-history">
+      <div id="score-history-title">Score History</div>
+    </div>
+  </div>
+</body>
+</html>
