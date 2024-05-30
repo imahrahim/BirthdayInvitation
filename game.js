@@ -14,9 +14,9 @@ let specialCloudImg;
 let specialCloudGenerated = false; // Flag to ensure only one special cloud is generated
 
 function preload() {
-  birdImg = loadImage('https://github.com/imahrahim/BirthdayInvitation/blob/419676468e69e1ceb9e97ccfd23feae8a76b16b5/imgs/cloud.png');
-  cloudImg = loadImage('https://github.com/imahrahim/BirthdayInvitation/blob/419676468e69e1ceb9e97ccfd23feae8a76b16b5/imgs/bird.png');
-  specialCloudImg = loadImage('https://github.com/imahrahim/BirthdayInvitation/blob/419676468e69e1ceb9e97ccfd23feae8a76b16b5/imgs/bird.png');
+  birdImg = loadImage('https://raw.githubusercontent.com/imahrahim/BirthdayInvitation/main/imgs/cloud.png');
+  cloudImg = loadImage('https://raw.githubusercontent.com/imahrahim/BirthdayInvitation/main//imgs/bird.png');
+  specialCloudImg = loadImage('https://raw.githubusercontent.com/imahrahim/BirthdayInvitation/main//imgs/bird.png');
 }
 
 function setup() {
